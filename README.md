@@ -4,6 +4,9 @@
 Afficher le nom de la machine:
 ```hostname```
 
+Définir un nouveau “hostname” pour la machine:
+```hostname set-hostname [new_hostname]```
+
 Savoir quel utilisateur est actuellement connecté:
 ```whoami```
 
