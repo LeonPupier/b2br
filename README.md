@@ -16,8 +16,11 @@ Connexion au serveur SSH:
 Configuration du serveur SSH:
 ```nano etc/ssh/sshd_config```
 
-Voir les groupes présents sur le pc:
+Voir les groupes auquels appartient l'utilisateur:
 ```groups```
+
+Afficher les groupes présents sur la machine:
+```cat /etc/group```
 
 Créer un nouveau group:
 ```sudo groupadd [new_name_group]```
