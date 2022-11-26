@@ -37,7 +37,7 @@ Installer “sudo”:
 Configurer “sudo”:
 ```sudo visudo```
 
-Changer le chemin de journalisation des logs de “sudo”:
+Changer le chemin de journalisation des logs de “sudo” pour les inputs seulement:
 ```
 sudo visudo
 	> add line at the end: “Defaults syslog=local1”
