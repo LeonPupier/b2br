@@ -75,4 +75,4 @@ sudo /etc/crontab
 sudo service cron (status / start / stop / restart)
 ```
 
-*Nano >>>>>>>>> Vim*
+##### *Nano >>>>>>>>> Vim*
