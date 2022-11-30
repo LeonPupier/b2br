@@ -4,11 +4,23 @@
 Afficher le nom de la machine:
 ```hostname```
 
-Définir un nouveau “hostname” pour la machine:
-```hostname set-hostname [new_hostname]```
+Savoir quels utilisateurs sont actuellement connectés:
+```who```
 
-Savoir quel utilisateur est actuellement connecté:
+Afficher le nom de l'utilisateur actuel:
 ```whoami```
+
+Changer le mot de passe de l’utilisateur actuel:
+```passwd```
+
+Installer “sudo”:
+```apt-get install sudo```
+
+Configurer “sudo”:
+```sudo visudo```
+
+Définir un nouveau “hostname” pour la machine:
+```sudo hostnamectl set-hostname [new_hostname]```
 
 Connexion au serveur SSH:
 ```ssh [user]@localhost -p 4242```
@@ -17,25 +29,19 @@ Configuration du serveur SSH:
 ```nano etc/ssh/sshd_config```
 
 Voir les groupes auquels appartient l'utilisateur:
-```groups```
+```groups [user_name]```
 
-Afficher les groupes présents sur la machine:
-```cat /etc/group```
+Ajouter un utilisateur:
+```sudo adduser [user_name]```
 
 Créer un nouveau group:
-```sudo groupadd [new_name_group]```
+```sudo addgroup [group_name]```
 
 Ajouter un utilisateur a un groupe:
-```sudo user mod -a -G [name_group] [name_user]```
+```sudo adduser [group_name] [user_name]```
 
 Voir les utilisateurs appartenant au groupe souhaité:
 ```cat /etc/group | grep [group_name]```
-
-Installer “sudo”:
-```apt-get install sudo```
-
-Configurer “sudo”:
-```sudo visudo```
 
 Changer le chemin de journalisation des logs de “sudo” pour les inputs seulement:
 ```
@@ -45,9 +51,6 @@ sudo nano /etc/rsyslog.conf
 	> add line number 61: “local1.*	/var/log/sudo/“
 sudo systemctl restart rsyslog
 ```
-
-Ajouter un utilisateur:
-```sudo adduser [new_user_name]```
 
 Politique de mot de passe fort:
 ```
@@ -60,16 +63,16 @@ Configurer date d’expiration mot de passe:
 
 Pare-feu UFW:
 ```
-sudo service ufw (status / start / stop / restart)
+sudo service ufw [status / start / stop / restart]
 sudo ufw status
 ```
 
 Cron automatisation:
 ```
 sudo apt-get install cron
-crontab -e (avec l’user “root” actif)
+sudo /etc/crontab
+	> Ajout de regles
 sudo service cron (status / start / stop / restart)
 ```
 
-Changer le mot de passe de l’utilisateur actuel:
-```passwd```
+*Nano >>>>>>>>> Vim*
