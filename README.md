@@ -67,6 +67,10 @@ sudo service ufw [status / start / stop / restart]
 sudo ufw status
 ```
 
+Ajouter une règle UFW: ```sudo ufw allow [port]```
+
+Supprimer une règle UFW: ```sudo ufw delete [line_of_the_port_in_ufw_status]```
+
 Cron automatisation:
 ```
 sudo apt-get install cron
