@@ -46,9 +46,10 @@ Voir les utilisateurs appartenant au groupe souhaité:
 Changer le chemin de journalisation des logs de “sudo” pour les inputs seulement:
 ```
 sudo visudo
-	> add line at the end: “Defaults syslog=local1”
-sudo nano /etc/rsyslog.conf
-	> add line number 61: “local1.*	/var/log/sudo/“
+	Add lines:
+	> Defaults logfile="/var/log/sudo/log_command"
+	> Defaults iolog_dir="/var/log/sudo/"
+	> Defaults log_input,log_output
 sudo systemctl restart rsyslog
 ```
 
