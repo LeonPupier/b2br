@@ -56,7 +56,7 @@ sudo systemctl restart rsyslog
 Politique de mot de passe fort:
 ```
 sudo apt-get install libpam-pwquality (ajoute des règles de sécurité)
-nano /etc/pam.d/common_password
+nano /etc/pam.d/common-password
 ```
 
 Configurer date d’expiration mot de passe:
