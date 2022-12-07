@@ -38,7 +38,7 @@ Créer un nouveau group:
 ```sudo addgroup [group_name]```
 
 Ajouter un utilisateur a un groupe:
-```sudo adduser [group_name] [user_name]```
+```sudo adduser [user_name] [group_name]```
 
 Voir les utilisateurs appartenant au groupe souhaité:
 ```cat /etc/group | grep [group_name]```
