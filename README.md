@@ -23,7 +23,7 @@ Définir un nouveau “hostname” pour la machine:
 ```sudo hostnamectl set-hostname [new_hostname]```
 
 Connexion au serveur SSH:
-```ssh [user]@localhost -p 4242```
+```ssh [user]@localhost -p [port]```
 
 Configuration du serveur SSH:
 ```nano etc/ssh/sshd_config```
