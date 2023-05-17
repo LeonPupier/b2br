@@ -10,7 +10,7 @@ Savoir quels utilisateurs sont actuellement connectés:
 Afficher le nom de l'utilisateur actuel:
 ```whoami```
 
-Changer le mot de passe de l’utilisateur actuel:
+Changer le mot de passe de l’utilisateur actuel: 
 ```passwd```
 
 Installer “sudo”:
